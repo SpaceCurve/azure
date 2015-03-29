@@ -1,8 +1,9 @@
-QuickStart for SpaceCurve Virtual Machine on Azure
+SpaceCurve QuickStart Virtual Machine on Azure
 ==================================================
 
 The SpaceCurve QuickStart Virtual Machine on Azure lets you try an installation of the
-SpaceCurve System on the Windows Azure cloud. You can load sample data, use the SpaceCurve SQL shell to
+SpaceCurve System on the Microsoft Azure cloud application platform. 
+You can load sample data, use the SpaceCurve SQL shell to
 query data, and use browser-based example applications to query geographic data
 and view results on an interactive world map.
 
