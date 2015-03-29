@@ -33,8 +33,11 @@ information about the SpaceCurve System, including its query language.
 Log In
 ------
 
-The VM will boot and arrive at the login screen of this CentOS 6 installation.
-Log in to the **spacecurve** account using the password *spacecurve*.
+After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual machine (VM) to your Azure account, you will use secure shell (ssh) to log in to the VM. You need a key file (.pem) to authenticate your login. Copy [the sc-qs-vm-key.pem file](sc-qs-vm-key.pem) to your computer. Then find the DNS address of your VM on Azure. You can find this address on VMDepot after the deployment completes, or find it in the Azure Management Console under VIRTUAL MACHINES as the DNS NAME for the running VM. Using the DNS address, launch ssh with a call similar to:
+
+`ssh -i sc-qs-vm-key.pem azureuser@spacecurve-123-DNS-address.cloudapp.net`
+
+Use this ssh session login to your virtual machine to complete the instructions in this document.
 
 Add Sample Data
 ---------------
@@ -50,12 +53,6 @@ Follow these three steps to load any dataset into SpaceCurve:
 The virtual machine contains three sample datasets in both CSV and Shapefile
 formats. Follow instructions in the following sub-sections to load sample data
 into the SpaceCurve System.
-
-### Open a Terminal Window
-
-Double-click the Terminal icon at the top-center of the desktop, next to the Firefox
-icon. You will use this terminal window to load sample data into the SpaceCurve
-System, and to use the SpaceCurve SQL shell.
 
 ### Add Census Data
 
