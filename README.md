@@ -1,4 +1,3 @@
-# azure
 QuickStart for SpaceCurve Virtual Machine on Azure
 ==================================================
 
