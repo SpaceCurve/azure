@@ -136,10 +136,7 @@ Next Steps
 ----------
 
 Now that you have a running installation of the SpaceCurve System that includes
-sample data, follow the instructions in these two pages:
- -  [ArcGIS Server Adapter for the
-SpaceCurve System][1] to install and use example applications that call the ArcGIS API.
- - [Cesium with Data Streaming][2] to install and use an example application with Cesium.
+sample data, follow the instructions in [Cesium with Data Streaming][2] to install and use an example application with Cesium.
 
 You can view the SpaceCurve Platform documentation when you register with SpaceCurve at [spacecurve.com/docs](http://www.spacecurve.com/docs). The documentation includes detailed
 information about the SpaceCurve System, including its query language.
