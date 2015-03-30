@@ -33,11 +33,11 @@ http://www.spacecurve.com/eula-vm/
 Log In
 ------
 
-After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual machine (VM) to your Azure account, you will use secure shell (ssh) to log in to the VM. You need a key file (.pem) to authenticate your login. Copy [the sc-qs-vm-key.pem file](sc-qs-vm-key.pem) to your computer. Then find the DNS address of your VM on Azure. You can find this address on VMDepot after the deployment completes, or find it in the Azure Management Console under VIRTUAL MACHINES as the DNS NAME for the running VM. Using the DNS address, launch ssh with a call *similar to* this bash command:
+After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual machine (VM) to your Azure account, you will use secure shell (ssh) to log in to the VM. You need a key file (.pem) to authenticate your login. Copy [the sc-qs-vm-key.pem file](sc-qs-vm-key.pem) to your computer. Then find the DNS address of your VM on Azure. You can find this address on VMDepot after the deployment completes, or find it in the Azure Management Console under VIRTUAL MACHINES as the DNS NAME for the running VM. Using your DNS address after **azureuser@**, launch ssh with a call *similar to* this bash command:
 
 `$ ssh -i sc-qs-vm-key.pem azureuser@spacecurve-123-DNS-address.cloudapp.net`
 
-Use this ssh session login to your virtual machine to complete the instructions in this document.
+IUse this ssh session login to your virtual machine to complete the instructions in this document.
 
 **Hint:** You will use an additional ssh session to run the Node.js web server for the Cesium example application, and you will use two additional ssh sessions to run web servers for the ArcGIS Adapter. You can create three additional ssh sessions using the same command above in three new terminal windows, and set them aside for later.
 
@@ -69,8 +69,8 @@ Follow these three steps to load any dataset into SpaceCurve:
 
 3.  Upload the dataset to SpaceCurve using an HTTP client such as cURL.
 
-The virtual machine contains three sample datasets in both CSV and Shapefile
-formats. Follow instructions in the following sub-sections to load sample data
+The virtual machine contains sample datasets in both CSV and Shapefile
+formats. Follow these instructions to load sample data
 into the SpaceCurve System.
 
 ### Add Census Data
@@ -100,68 +100,6 @@ SELECT * FROM schema.us_cities WHERE "geometry".ST_Distance(ST_Point(-122.3, 47.
 
 A result set of JSON data appears. This data desribes the cities around (and
 including) Seattle. These include Bellevue, Mercer Island, and others.
-
-Type `q` to exit the data view in the shell, and type `\q` to exit the shell
-application.
-
-### Add Earthquake Data
-
-In the terminal window, enter these commands to load the earthquake dataset into
-the SpaceCurve System database:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$ cd ~/VM/datasets/earthquakes
-$ sh scripts/1_transform.sh
-$ sh scripts/2_schema.sh > /dev/null # Runs a min+ w/ no output
-$ sh scripts/3_load.sh         
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can test this dataset by entering a query in the SpaceCurve SQL shell.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$ scctl shell -n ArcGIS      # runs the SpaceCurve SQL shell
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Enter this query in the SpaceCurve SQL shell to show all earthquakes within 50
-kilometers of Seattle:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SELECT * FROM schema.earthquakes WHERE "geometry".ST_Distance(ST_Point(-122.3, 47.6)) <= 30000.0;
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-A result set of JSON data appears. This data describes the earthquakes that
-occured within 30 kilometers of Seattle.
-
-Type `q` to exit the data view in the shell, and type `\q` to exit the shell
-application.
-
-### Add Zipcode Data
-
-In the terminal window, enter these commands to load the zipcode dataset into
-the SpaceCurve System database:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$ cd ~/VM/datasets/zipcodes
-$ sh scripts/1_transform.sh
-$ sh scripts/2_schema.sh > /dev/null # Runs a min+ w/ no output
-$ sh scripts/3_load.sh         
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can test this dataset by entering a query in the SpaceCurve SQL shell.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$ scctl shell -n ArcGIS      # runs the SpaceCurve SQL shell
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Enter this query in the SpaceCurve SQL shell to show all zipcodes within 50
-kilometers of Seattle:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SELECT * FROM schema.zipcodes WHERE "geometry".ST_Distance(ST_Point(-122.3, 47.6)) <= 2000.0;
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-A result set of JSON data appears. This data describes the zipcodes located
-within 2 kilometers of Seattle.
 
 Type `q` to exit the data view in the shell, and type `\q` to exit the shell
 application.
