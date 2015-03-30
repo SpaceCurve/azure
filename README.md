@@ -24,6 +24,8 @@ conditions of use specified in the `COPYRIGHT.txt` file and in the EULA
 agreement that accompanies the VMDepot image of this software. You must examine
 and accept this agreement before proceeding:
 
+http://www.spacecurve.com/eula-vm/
+
 
 Other Resources
 ---------------
