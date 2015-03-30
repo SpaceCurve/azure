@@ -1,9 +1,12 @@
 Cesium with Data Streaming
 ==========================
 
-This code is forked from [Cesium by Analytical Graphics, Inc. (AGI)](https://github.com/AnalyticalGraphicsInc/cesium).
+This document describes code published at [SpaceCurve/cesium](https://github.com/SpaceCurve/cesium) and included in the 
+SpaceCurve QuickStart Virtual Machine on Azure.
 
-This Cesium build adds a [GeometryBuffer](Source/Scene/GeometryBuffer.js) object you can use to queue points, lines, and polygons onto a scene, and flush these visual elements to the GPU in a single operation. If you use a timer to regularly flush queued elements, data can be rendered as it arrives.
+This Cesium build adds a [GeometryBuffer](Source/Scene/GeometryBuffer.js) object you can use to queue points, lines, 
+and polygons onto a scene, and flush these visual elements to the GPU in a single operation. If you use a timer to
+regularly flush queued elements, data can be rendered as it arrives.
 
 These instructions describe the steps you will take to use this modified Cesium build with sample data on the SpaceCurve QuickStart Virtual Machine.
 
@@ -11,18 +14,17 @@ Dependencies
 ------------
 
 * Before following these instructions, be sure you installed sample data by
-following the instructions in the **Add Sample Data** section of [QuickStart for
-SpaceCurve Virtual Machine](../../../arcadapt/blob/master/quickstart.md).
+following the instructions in the **Add Sample Data** section of 
+[SpaceCurve QuickStart Virtual Machine on Azure](README.md).
 
 * This example requires a browser that includes WebGL. A browser that runs [Cesium Demos](http://cesiumjs.org/) should also run this example.
 
 Run Node.js to host Cesium
 --------------------------
 
-Our Virtual Machine includes Node.js to run Cesium. To boot the Virtual Machine and log in, follow steps in [QuickStart for SpaceCurve Virtual Machine](../../../arcadapt/blob/master/quickstart.md). Then follow these steps to start the Node.js server:
-
-2. In the Virtual Machine, double-click the Terminal icon at the top-center of the desktop, next to the Firefox icon. 
-3. In the terminal window, enter these commands:
+Our Virtual Machine includes Node.js to run Cesium. To start the Node.js instance, 
+create an ssh terminal window using the instructions in [SpaceCurve QuickStart Virtual Machine on Azure](README.md).
+Then enter these commands in the ssh terminal window:
 
         $ cd ~/cesium
         $ node server.js 5555
@@ -34,16 +36,11 @@ You can use a browser-based example in the SpaceCurve VM to show data as it arri
 
 In this example, the SpaceCurve VM operates as a server. Follow these steps to view the example:
 
-2. On the desktop within the SpaceCurve VM, double-click the Terminal icon. A terminal window opens.
-3. In the terminal window, enter:
+1. Get the DNS address of your Azure VM. You can find this address in your Azure management interface.
+6. In a browser on your host computer, paste the internet address into the location bar, add **:5555** to the address, and press the **return** key. 
+The address in the browser will look *similar* to this:
 
-        ifconfig | grep 'inet addr'
-        
-4. Using the mouse, select the first internet address you see. The internet address is four numbers separated by periods. Yours will look something like *192.168.xx.xx*.
-5. From the menu, click **Edit**, and click **Copy**.
-6. In a browser on your host computer (not inside the VM), paste the internet address into the location bar, add **:5555** to the address, and press the **return** key. The address in the browser will look *similar* to this:
-
-        192.168.11.11:5555
+        spacecurve-123-DNS-address.cloudapp.net:5555
 
 ### Query data in the Example
 
