@@ -188,6 +188,7 @@ sample data, follow the instructions in these two pages:
 SpaceCurve System][1] to install and use example applications that call the ArcGIS API.
  - [Cesium with Data Streaming][2] to install and use an example application with Cesium.
 
+You can view the SpaceCurve Platform documentation when you register with SpaceCurve at [http://www.spacecurve.com/docs]().
 
 
 
