@@ -39,6 +39,8 @@ After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual 
 
 Use this ssh session login to your virtual machine to complete the instructions in this document.
 
+**Hint:** You will use an additional ssh session to run the Node.js web server for the Cesium example application, and you will use two additional ssh sessions to run web servers for the ArcGIS Adapter. You can create three additional ssh sessions using the same command above in new terminal windows, and set them aside for later.
+
 Run SpaceCurve System
 ---------
 
