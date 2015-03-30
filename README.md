@@ -16,12 +16,14 @@ increasing throughput demands.
 Follow the instructions in this document to set up the QuickStart VM and sample
 data.
 
-Copyright
----------
+Copyright and EULA
+--------------------
 
 By accessing the SpaceCurve QuickStart VM you indicate your agreement to the
 conditions of use specified in the `COPYRIGHT.txt` file and in the EULA
-agreement you agreed to before downloading this software.
+agreement that accompanies the VMDepot image of this software. You must examine
+and accept this agreement before proceeding:
+
 
 Other Resources
 ---------------
