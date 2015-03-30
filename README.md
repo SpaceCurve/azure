@@ -16,6 +16,9 @@ increasing throughput demands.
 Follow the instructions in this document to set up the QuickStart VM and sample
 data.
 
+**Note:** <font color='red'>When creating your Azure VM using VM Depot, you must select the **VM Size** of **Standard_D13** or higher.</font>
+
+
 Copyright and EULA
 --------------------
 
@@ -27,13 +30,6 @@ and accept this agreement before proceeding:
 http://www.spacecurve.com/eula-vm/
 
 
-Other Resources
----------------
-
-The QuickStart download includes full software
-documentation and release notes. The software documentation includes detailed
-information about the SpaceCurve System, including its query language.
-
 Log In
 ------
 
@@ -42,6 +38,9 @@ After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual 
 `ssh -i sc-qs-vm-key.pem azureuser@spacecurve-123-DNS-address.cloudapp.net`
 
 Use this ssh session login to your virtual machine to complete the instructions in this document.
+
+Run SpaceCurve System
+---------
 
 Add Sample Data
 ---------------
@@ -188,8 +187,8 @@ sample data, follow the instructions in these two pages:
 SpaceCurve System][1] to install and use example applications that call the ArcGIS API.
  - [Cesium with Data Streaming][2] to install and use an example application with Cesium.
 
-You can view the SpaceCurve Platform documentation when you register with SpaceCurve at [spacecurve.com/docs](http://www.spacecurve.com/docs).
-
+You can view the SpaceCurve Platform documentation when you register with SpaceCurve at [spacecurve.com/docs](http://www.spacecurve.com/docs). The documentation includes detailed
+information about the SpaceCurve System, including its query language.
 
 
 [1]: <README.md>
