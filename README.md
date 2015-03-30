@@ -16,7 +16,7 @@ increasing throughput demands.
 Follow the instructions in this document to set up the QuickStart VM and sample
 data.
 
-**Note:** <font color='red'>When creating your Azure VM using VM Depot, you must select the **VM Size** of **Standard_D13** or higher.</font>
+**Note:** When creating your Azure VM using VM Depot, you must select the **VM Size** of **Standard_D13** or higher.
 
 
 Copyright and EULA
@@ -41,6 +41,20 @@ Use this ssh session login to your virtual machine to complete the instructions 
 
 Run SpaceCurve System
 ---------
+
+In your ssh terminal window, enter these commands to initialize and run SpaceCurve System, and create a database instance that will hold your sample data:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$ cd /tmp/prep
+$ ./install_cluster.sh
+$ cd ~/CM/scripts
+$ ./createdb.sh
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can confirm the SpaceCurve System is running by entering this command:
+
+`$ scctl status`
+
 
 Add Sample Data
 ---------------
