@@ -33,7 +33,7 @@ http://www.spacecurve.com/eula-vm/
 Log In
 ------
 
-After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual machine (VM) to your Azure account, you will use secure shell (ssh) to log in to the VM. You need a key file (.pem) to authenticate your login. Copy [the sc-qs-vm-key.pem file](sc-qs-vm-key.pem) to your computer. Then find the DNS address of your VM on Azure. You can find this address on VMDepot after the deployment completes, or find it in the Azure Management Console under VIRTUAL MACHINES as the DNS NAME for the running VM. Using the DNS address, launch ssh with a call similar to:
+After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual machine (VM) to your Azure account, you will use secure shell (ssh) to log in to the VM. You need a key file (.pem) to authenticate your login. Copy [the sc-qs-vm-key.pem file](sc-qs-vm-key.pem) to your computer. Then find the DNS address of your VM on Azure. You can find this address on VMDepot after the deployment completes, or find it in the Azure Management Console under VIRTUAL MACHINES as the DNS NAME for the running VM. Using the DNS address, launch ssh with a call *similar to* this bash command:
 
 `ssh -i sc-qs-vm-key.pem azureuser@spacecurve-123-DNS-address.cloudapp.net`
 
