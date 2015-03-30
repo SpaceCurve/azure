@@ -32,7 +32,7 @@ Then enter these commands in the ssh terminal window:
 Run Example in Client Browser
 -----------------------------
 
-You can use a browser-based example in the SpaceCurve VM to show data as it arrives in the browser.
+Now you can use a browser-based example in the SpaceCurve VM to show data as it arrives in the browser.
 
 In this example, the SpaceCurve VM operates as a server. Follow these steps to view the example:
 
