@@ -142,5 +142,4 @@ You can view the SpaceCurve Platform documentation when you register with SpaceC
 information about the SpaceCurve System, including its query language.
 
 
-[1]: <README.md>
-[2]: <https://github.com/SpaceCurve/cesium/blob/master/README.md>
+[2]: <cesium.md>
