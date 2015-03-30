@@ -49,7 +49,7 @@ In your ssh terminal window, enter these commands to initialize and run SpaceCur
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 $ cd /tmp/prep
 $ ./install_cluster.sh
-$ cd ~/CM/scripts
+$ cd ~/VM/scripts
 $ ./createdb.sh
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
