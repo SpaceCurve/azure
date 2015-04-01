@@ -37,7 +37,7 @@ After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual 
 
 `$ ssh -i sc-qs-vm-key.pem azureuser@spacecurve-123-DNS-address.cloudapp.net`
 
-IUse this ssh session login to your virtual machine to complete the instructions in this document.
+Use this ssh session login to your virtual machine to complete the instructions in this document.
 
 **Hint:** You will use an additional ssh session to run the Node.js web server for the Cesium example application, and you will use two additional ssh sessions to run web servers for the ArcGIS Adapter. You can create three additional ssh sessions using the same command above in three new terminal windows, and set them aside for later.
 
