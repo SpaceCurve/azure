@@ -4,7 +4,7 @@ Cesium with Data Streaming
 This document describes code published at [SpaceCurve/cesium](https://github.com/SpaceCurve/cesium) and included in the 
 SpaceCurve QuickStart Virtual Machine on Azure.
 
-This Cesium build adds a [GeometryBuffer](Source/Scene/GeometryBuffer.js) object you can use to queue points, lines, 
+This Cesium build adds a **GeometryBuffer** object you can use to queue points, lines, 
 and polygons onto a scene, and flush these visual elements to the GPU in a single operation. If you use a timer to
 regularly flush queued elements, data can be rendered as it arrives.
 
