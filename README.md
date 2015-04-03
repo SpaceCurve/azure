@@ -24,8 +24,7 @@ Copyright and EULA
 
 By accessing the SpaceCurve QuickStart VM you indicate your agreement to the
 conditions of use specified in the `COPYRIGHT.txt` file and in the EULA
-agreement that accompanies the VMDepot image of this software. You must examine
-and accept this agreement before proceeding:
+agreement you accepted before receiving the VMDepot image of this software. 
 
 http://www.spacecurve.com/eula-vm/
 
