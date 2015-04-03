@@ -112,6 +112,8 @@ which is produced by the SchemaDiscovery tool in the **2\_schema.sh** script.
 You can modify the schema in the `.sql` file before loading the data into the
 SpaceCurve System using the **3\_load.sh** script.
 
+**Note:** The SpaceCurve QuickStart VM is not a secure enviroment, so don't load sensitive data onto this VM.
+
 Start Over
 ----------
 
