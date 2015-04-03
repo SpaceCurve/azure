@@ -114,8 +114,8 @@ SpaceCurve System using the **3\_load.sh** script.
 
 **Note:** The SpaceCurve QuickStart VM is not a secure enviroment, so don't load sensitive data onto this VM.
 
-Start Over
-----------
+Start Over?
+-----------
 
 You might wish to reset this installation of the SpaceCurve System. The simplest
 way to start over form scratch is to shutdown SpaceCurve, erase its resources
