@@ -36,8 +36,8 @@ Now you can use a browser-based example in the SpaceCurve VM to show data as it 
 
 In this example, the SpaceCurve VM operates as a server. Follow these steps to view the example:
 
-1. Get the DNS address of your Azure VM. You can find this address in your Azure management interface.
-6. In a browser on your host computer, paste the internet address into the location bar, add **:5555** to the address, and press the **return** key. 
+1. Get the DNS NAME of your Azure VM. You can find this address in the dashboard for this VM.
+2. In a browser on your host computer, paste the DNS NAME into the location bar, add **:5555** to the address, and press the **return** key. 
 The address in the browser will look *similar* to this:
 
         spacecurve-123-DNS-address.cloudapp.net:5555
