@@ -45,7 +45,7 @@ After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual 
 
 1. Find the DNS address of your VM on Azure. You can find this address on VMDepot after the deployment completes, or find it in the Azure Management Console under VIRTUAL MACHINES as the DNS NAME for the running VM.
 2. Using your DNS address after **azureuser@**, launch ssh with a call *similar to* this bash command:  
-    `$ ssh -i sc-qs-vm-key.pem azureuser@spacecurve-123-DNS-address.cloudapp.net`
+    `$ ssh -i key.pem azureuser@spacecurve-123-DNS-address.cloudapp.net`
 
 Use this ssh session login to your virtual machine to complete the instructions in this document.
 
