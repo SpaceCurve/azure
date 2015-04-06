@@ -58,13 +58,24 @@ In your ssh terminal window, enter these commands to initialize and run SpaceCur
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 $ cd /tmp/prep
 $ ./install_cluster.sh
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+After the script completes, enter this command to confirm is running:s
+
+`$ scctl status`
+
+You should see four processes with **running** status. If you do not, run the `install_cluster.sh` script again!
+
+Initialize the sample data database instance
+---------
+
+Enter these commands in your terminal window to initialize your database instance.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 $ cd ~/VM/scripts
 $ ./createdb.sh
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can confirm the SpaceCurve System is running by entering this command:
-
-`$ scctl status`
 
 
 Add Sample Data
