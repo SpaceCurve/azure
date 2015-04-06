@@ -32,13 +32,25 @@ http://www.spacecurve.com/eula-vm/
 Log In
 ------
 
-After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual machine (VM) to your Azure account, you will use secure shell (ssh) to log in to the VM. You need a key file (.pem) to authenticate your login. Copy [the sc-qs-vm-key.pem file](sc-qs-vm-key.pem) to your computer. (Hint: ssh might require you to only let root read this .pem file. Try **chmod 0400 sc-qs-vm-key.pem**.) Then find the DNS address of your VM on Azure. You can find this address on VMDepot after the deployment completes, or find it in the Azure Management Console under VIRTUAL MACHINES as the DNS NAME for the running VM. Using your DNS address after **azureuser@**, launch ssh with a call *similar to* this bash command:
+After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual machine (VM) to your Azure account, you will use secure shell (ssh) to log in to the VM. You need a key file (.pem) to authenticate your login.
+
+### Copy the .PEM file
+
+1. Right-click [this hyperlink](https://raw.githubusercontent.com/SpaceCurve/azure/master/sc-qs-vm-key.pem) and click **Save Link As...**. Save the file to your local computer. For these steps, save this file as **~/key.pem**. 
+2. You must set this ssh key file to be visible only to the **root** user. Open a Terminal window and enter these commands:
+    $ cd ~
+    $ chmod 0400 key.pem
+
+### Connect to your VM using ssh
+
+1. Find the DNS address of your VM on Azure. You can find this address on VMDepot after the deployment completes, or find it in the Azure Management Console under VIRTUAL MACHINES as the DNS NAME for the running VM.
+2. Using your DNS address after **azureuser@**, launch ssh with a call *similar to* this bash command:
 
 `$ ssh -i sc-qs-vm-key.pem azureuser@spacecurve-123-DNS-address.cloudapp.net`
 
 Use this ssh session login to your virtual machine to complete the instructions in this document.
 
-**Hint:** You will use an additional ssh session to run the Node.js web server for the Cesium example application, and you will use two additional ssh sessions to run web servers for the ArcGIS Adapter. You can create three additional ssh sessions using the same command above in three new terminal windows, and set them aside for later.
+**Hint:** You will use an additional ssh session to run the Node.js web server for the Cesium example application. You can create an additional ssh session using the same command above in another terminal window, and set it aside for later.
 
 Run SpaceCurve System
 ---------
