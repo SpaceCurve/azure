@@ -60,7 +60,7 @@ $ cd /tmp/prep
 $ ./install_cluster.sh
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-After the script completes, enter this command to confirm is running:s
+After the script completes, enter this command to confirm is running:
 
 `$ scctl status`
 
