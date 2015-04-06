@@ -37,9 +37,9 @@ After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual 
 ### Copy the .PEM file
 
 1. Right-click [this hyperlink](https://raw.githubusercontent.com/SpaceCurve/azure/master/sc-qs-vm-key.pem) and click **Save Link As...**. Save the file to your local computer. For these steps, save this file as **~/key.pem**. 
-2. You must set this ssh key file to be visible only to the **root** user. Open a Terminal window and enter these commands:
-    $ cd ~
-    $ chmod 0400 key.pem
+2. You must set this ssh key file to be visible only to the **root** user. Open a Terminal window and enter these commands:  
+    `$ cd ~
+    $ chmod 0400 key.pem`
 
 ### Connect to your VM using ssh
 
