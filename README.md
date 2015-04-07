@@ -38,42 +38,44 @@ After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual 
 
 1. Right-click [this hyperlink](https://raw.githubusercontent.com/SpaceCurve/azure/master/sc-qs-vm-key.pem) and click **Save Link As...**. Save the file to your local computer. For these steps, save this file as **~/key.pem**. 
 2. You must set this ssh key file to be visible only to the **root** user. Open a Terminal window and enter this command:  
-    `$ chmod 0400 ~/key.pem`
+    `chmod 0400 ~/key.pem`
 
 ### Connect to your VM using ssh
 
 1. Find the DNS address of your VM on Azure. You can find this address on VMDepot after the deployment completes, or find it in the Azure Management Console under VIRTUAL MACHINES as the DNS NAME for the running VM.
-2. Using your DNS address after **azureuser@**, launch ssh with a call *similar to* this bash command:  
-    `$ ssh -i ~/key.pem azureuser@spacecurve-123-DNS-address.cloudapp.net`
+2. In your Terminal window, launch ssh with a call *similar to* this bash command:  
+    `ssh -i ~/key.pem azureuser@spacecurve-123-DNS-address.cloudapp.net`
 
-Use this ssh session login to your virtual machine to complete the instructions in this document.
+Add your DNS address (not ours, shown here) after **azureuser@**.
 
-**Hint:** You will use an additional ssh session to run the Node.js web server for the Cesium example application. You can create an additional ssh session using the same command above in another terminal window, and set it aside for later.
+Use the ssh session in your Terminal window to control your virtual machine and complete the instructions in this document.
+
+**Hint:** You will use an additional ssh session to run the Node.js web server for the Cesium example application. You can create an additional ssh session using the same command above in another Terminal window, and set it aside for later.
 
 Run SpaceCurve System
 ---------
 
-In your ssh terminal window, enter these commands to initialize and run SpaceCurve System, and create a database instance that will hold your sample data:
+In your ssh Terminal window, enter these commands to initialize and run SpaceCurve System, and create a database instance that will hold your sample data:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$ cd /tmp/prep
-$ ./install_cluster.sh
+cd /tmp/prep
+./install_cluster.sh
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 After the script completes, enter this command to confirm is running:
 
-`$ scctl status`
+`scctl status`
 
 You should see four processes with **running** status. If you do not, run the `install_cluster.sh` script again!
 
 Initialize the sample data database instance
 ---------
 
-Enter these commands in your terminal window to initialize your database instance.
+Enter these commands in your ssh Terminal window to initialize your database instance.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$ cd ~/VM/scripts
-$ ./createdb.sh
+cd ~/VM/scripts
+./createdb.sh
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -95,20 +97,20 @@ into the SpaceCurve System.
 
 ### Add Census Data
 
-In the terminal window, enter these commands to load the census dataset into the
+In the ssh Terminal window, enter these commands to load the census dataset into the
 SpaceCurve System database:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$ cd ~/VM/datasets/census
-$ sh scripts/1_transform.sh
-$ sh scripts/2_schema.sh > /dev/null # Runs a min+ w/ no output
-$ sh scripts/3_load.sh               # Runs a min or more
+cd ~/VM/datasets/census
+sh scripts/1_transform.sh
+sh scripts/2_schema.sh > /dev/null # Runs a min+ w/ no output
+sh scripts/3_load.sh               # Runs a min or more
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can test this dataset by entering a query in the SpaceCurve SQL shell.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$ scctl shell -n ArcGIS      # runs the SpaceCurve SQL shell
+scctl shell -n ArcGIS      # runs the SpaceCurve SQL shell
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Enter this query in the SpaceCurve SQL shell to show all cities within 9
@@ -147,11 +149,11 @@ these tasks.
 to re-install sample data** by following the steps shown above.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$ cd ~/VM
-$ scctl stop
-$ sh scripts/cleanup.sh 
-$ scctl start
-$ sh scripts/init.sh 
+cd ~/VM
+scctl stop
+sh scripts/cleanup.sh 
+scctl start
+sh scripts/init.sh 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Next Steps
