@@ -26,8 +26,8 @@ Our Virtual Machine includes Node.js to run Cesium. To start the Node.js instanc
 create an ssh terminal window using the instructions in [SpaceCurve QuickStart Virtual Machine on Azure](README.md).
 Then enter these commands in the ssh terminal window:
 
-        $ cd ~/cesium
-        $ node server.js 5555
+        cd ~/cesium
+        node server.js 5555
 
 Run Example in Client Browser
 -----------------------------
