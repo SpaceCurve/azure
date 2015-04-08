@@ -16,7 +16,10 @@ increasing throughput demands.
 Follow the instructions in this document to set up the QuickStart VM and sample
 data.
 
-**Note:** When creating your Azure VM using VM Depot, you must select the **VM Size** of **Standard_D13** or higher.
+**Note:** 
+
+ * When creating your Azure VM using VM Depot, you must select the **VM Size** of **Standard_D13** or higher.
+ * You must use the **`azureuser`** user name when you launch your VM on VM Depot.
 
 
 Copyright and EULA
