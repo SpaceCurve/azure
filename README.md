@@ -61,7 +61,7 @@ cd /tmp/prep
 ./install_cluster.sh
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-After the script completes, enter this command to confirm is running:
+After the script completes, enter this command to confirm SpaceCurve System is running:
 
 `scctl status`
 
