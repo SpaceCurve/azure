@@ -16,10 +16,10 @@ increasing throughput demands.
 Follow the instructions in this document to set up the QuickStart VM and sample
 data.
 
-**Note:** 
-
+As you launch your VM on Azure by following instructions on [the VM Depot launch tutorial](https://vmdepot.msopentech.com/tutorial/deploy/51432.html/), KEEP THESE DETAILS IN MIND:  
  * When creating your Azure VM using VM Depot, you must select the **VM Size** of **Standard_D13** or higher.
- * You must use the **`azureuser`** user name when you launch your VM on VM Depot.
+ * You must use the **`azureuser`** user name when you launch your VM on VM Depot. Don't change this default user name!
+ * You will enter a strong password when preparing the VM for launch on VM Depot. You won't use this password again, so don't worry about remembering it. Instead, you will authenticate using a .pem file with ssh. We will give you the .pem file you need.
 
 
 Copyright and EULA
