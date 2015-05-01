@@ -1,7 +1,7 @@
-SpaceCurve QuickStart Virtual Machine on Azure
+SpaceCurve QuickStart Virtual Machine on Azure Marketplace
 ==================================================
 
-The SpaceCurve QuickStart Virtual Machine on Azure lets you try an installation of the
+The SpaceCurve QuickStart Virtual Machine on Azure Marketplace lets you try an installation of the
 SpaceCurve System on the Microsoft Azure cloud application platform. 
 You can load sample data, use the SpaceCurve SQL shell to
 query data, and use browser-based example applications to query geographic data
@@ -16,11 +16,9 @@ increasing throughput demands.
 Follow the instructions in this document to set up the QuickStart VM and sample
 data.
 
-As you launch your VM on Azure by following instructions on [the VM Depot launch tutorial](https://vmdepot.msopentech.com/tutorial/deploy/51432.html/), KEEP THESE DETAILS IN MIND:  
- * When creating your Azure VM using VM Depot, you must select the **VM Size** of **Standard_D13** or higher.
- * Remember that a VM of this larger size accrues non-trivial allocation costs to your account when your VM is running! To save money, turn off the VM when not actively using it.
- * You must use the **`azureuser`** user name when you launch your VM on VM Depot. Don't change this default user name!
- * You will enter a strong password when preparing the VM for launch on VM Depot. You won't use this password again, so don't worry about remembering it. Instead, you will authenticate using a .pem file with ssh. We will give you the .pem file you need.
+As you launch your VM on Azure Marketplace, KEEP THESE DETAILS IN MIND:  
+ * Remember that a VM of this size accrues allocation costs to your account when your VM is running! To save money, turn off the VM when not actively using it.
+ * You must use the **`azureuser`** user name when you launch your VM. Don't change this default user name!
 
 
 Copyright and EULA
