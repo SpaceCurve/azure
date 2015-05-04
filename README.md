@@ -30,7 +30,7 @@ By accessing the SpaceCurve QuickStart VM you indicate your agreement to the
 conditions of use specified in the `COPYRIGHT.txt` file and in the EULA
 agreement you accepted before receiving the VMDepot image of this software. 
 
-http://www.spacecurve.com/eula-vm/
+http://www.spacecurve.com/amember/signup/aXces2azure
 
 
 Log In
@@ -40,7 +40,9 @@ After you complete the Deployment Tutorial steps on VMDepot to deploy a virtual 
 
 ### Copy the .PEM file
 
-1. Right-click [this hyperlink](https://raw.githubusercontent.com/SpaceCurve/azure/master/sc-qs-vm-key.pem) and click **Save Link As...**. Save the file to your local computer. For these steps, save this file as **~/key.pem**. 
+1. Follow this link to sign up for a .PEM file:
+    http://www.spacecurve.com/amember/signup/aXces2azure
+2. Save the .PEM file as **~/key.pem**. 
 2. You must set this ssh key file to be visible only to the **root** user. Open a Terminal window and enter this command:  
     `chmod 0400 ~/key.pem`
 
