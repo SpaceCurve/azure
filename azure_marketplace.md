@@ -45,18 +45,12 @@ Use the ssh session in your Terminal window to control your virtual machine and 
 Run SpaceCurve System
 ---------
 
-In your ssh Terminal window, enter these commands to initialize and run SpaceCurve System, and create a database instance that will hold your sample data:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-cd /tmp/prep
-./install_cluster.sh
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-After the script completes, enter this command to confirm SpaceCurve System is running:
+In your ssh Terminal window, enter this command to confirm SpaceCurve System is running:
 
 `scctl status`
 
-You should see four processes with **running** status. If you do not, run the `install_cluster.sh` script again!
+You should see four processes with **running** status. If you do not, wait a bit and try the command again.
+
 
 Initialize the sample data database instance
 ---------
