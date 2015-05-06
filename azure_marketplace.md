@@ -36,7 +36,7 @@ http://www.spacecurve.com/eula-vm/
 1. Find the DNS address of your VM on Azure. You can find this address after the deployment completes, in the Azure Management Console under VIRTUAL MACHINES as the DNS NAME for the running VM.
 2. In your Terminal window, launch ssh with a call *similar to* this bash command:  
     `ssh -i ~/key.pem azureuser@spacecurve-123-DNS-address.cloudapp.net`  
-    (Add your DNS address (not ours, shown here) after **azureuser@**.)
+    (You might use a password rather than a .pem file. Be sure to add your DNS address (not ours, shown here) after **azureuser@**.)
 
 Use the ssh session in your Terminal window to control your virtual machine and complete the instructions in this document.
 
