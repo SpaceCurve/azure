@@ -26,14 +26,14 @@ Copyright and EULA
 
 By accessing the SpaceCurve QuickStart VM you indicate your agreement to the
 conditions of use specified in the `COPYRIGHT.txt` file and in the EULA
-agreement you accepted before receiving the VMDepot image of this software. 
+agreement you accepted before receiving the VM image of this software. 
 
 http://www.spacecurve.com/eula-vm/
 
 
 ### Connect to your VM using ssh
 
-1. Find the DNS address of your VM on Azure. You can find this address on VMDepot after the deployment completes, or find it in the Azure Management Console under VIRTUAL MACHINES as the DNS NAME for the running VM.
+1. Find the DNS address of your VM on Azure. You can find this address after the deployment completes, in the Azure Management Console under VIRTUAL MACHINES as the DNS NAME for the running VM.
 2. In your Terminal window, launch ssh with a call *similar to* this bash command:  
     `ssh -i ~/key.pem azureuser@spacecurve-123-DNS-address.cloudapp.net`  
     (Add your DNS address (not ours, shown here) after **azureuser@**.)
