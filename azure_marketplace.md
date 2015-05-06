@@ -127,7 +127,10 @@ Start Over?
 You might wish to reset this installation of the SpaceCurve System. The simplest
 way to start over form scratch is to shutdown SpaceCurve, erase its resources
 (log files, volume files), and reinitialize the server. You can reset your installation
-by running the `install_cluster.sh` command again, as described in the *Run SpaceCurve System* section of this document.
+by running the `install_cluster.sh` command.
+
+    cd /tmp/prep
+    ./install_cluster.sh
 
 Next Steps
 ----------
