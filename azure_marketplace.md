@@ -130,7 +130,7 @@ way to start over form scratch is to shutdown SpaceCurve, erase its resources
 by running the `install_cluster.sh` command.
 
     cd /tmp/prep
-    ./install_cluster.sh
+    sudo ./install_cluster.sh
 
 Next Steps
 ----------
