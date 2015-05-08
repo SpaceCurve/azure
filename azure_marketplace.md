@@ -17,7 +17,7 @@ Follow the instructions in this document to set up the QuickStart VM and sample
 data.
 
 As you launch your VM on Azure Marketplace, keep these details in mind:
- * Remember that a VM of this size accrues allocation costs to your account when your VM is running! To save money, turn off the VM when not actively using it.
+ * Remember that a VM of this size accrues allocation costs to your account when your VM is running!
  * You must use the **`azureuser`** user name when you launch your VM. Don't change this default user name!
 
 
