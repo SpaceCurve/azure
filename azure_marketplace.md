@@ -26,9 +26,9 @@ Copyright and EULA
 
 By accessing the SpaceCurve QuickStart VM you indicate your agreement to the
 conditions of use specified in the `COPYRIGHT.txt` file and in the EULA
-agreement you accepted before receiving the VM image of this software. 
+agreement. 
 
-http://www.spacecurve.com/eula-vm/
+http://www.spacecurve.com/amember/signup/aXces2azureMP
 
 
 ### Connect to your VM using ssh
